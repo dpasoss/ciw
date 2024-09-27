@@ -1,0 +1,156 @@
+
+
+.body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Estilo para el navbar */
+.navbar {
+    background-color: transparent !important;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el logo */
+.navbar-logo {
+    height: 70px; /* Tamaño ajustado del logo */
+    width: auto;
+}
+
+/* Estilo para los elementos de la lista (nav items) */
+.navbar-nav .nav-item {
+    margin-right: 17px; /* Espacio horizontal entre los items */
+}
+
+
+/* Estilo para los enlaces de navegación */
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    color: rgb(85, 85, 85) ;/* Texto blanco */
+    font-weight: bold;
+    padding: 30px 35px; /* Espaciado alrededor de los enlaces */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d01f1f; /* Color dorado al pasar el mouse */
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: #d01f1f; /* Color dorado para el enlace activo */
+    border-bottom: 2px solid #d01f1f; /* Subrayado dorado */
+}
+
+/* Estilo para el dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: gray; /* Fondo del dropdown en azul más claro */
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #003366; /* Fondo oscuro al pasar el mouse */
+}
+
+/* Estilo para el submenu */
+.dropdown-submenu .dropdown-menu {
+    background-color: gray; /* Mantiene el mismo color del menú principal */
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* Botón de colapso del navbar (en pantallas pequeñas) */
+.navbar-toggler {
+    border-color: #d01f1f; /* Borde blanco semitransparente */
+    background-color: gray;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícono de menú personalizado */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-logo {
+        height: 60px; /* Tamaño más pequeño del logo en pantallas pequeñas */
+    }
+    
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+/* Estilo personalizado para el botón "Campus Virtual" */
+.nav-item .btn.btn-danger {
+    margin-top: 20px;
+    border: 1.3px solid #003366;  
+    border-radius: 30px;        
+    padding: 10px 20px;         
+    font-size: 16px;            
+    font-weight: bold;         
+    transition: all 0.3s ease;  
+    color: ;               
+}
+
+/* Efecto hover para el botón */
+.nav-item .btn.btn-danger:hover {
+    background-color: #b10c0c;  /* Fondo más oscuro al pasar el mouse */
+    border-color: #8b0808;      /* Borde más oscuro en hover */
+    color: #f0f0f0;             /* Cambiar el color del texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo del botón en dispositivos móviles (ajuste de tamaño) */
+@media (max-width: 768px) {
+    .nav-item .btn.btn-danger {
+        padding: 8px 15px;     /* Reducir el tamaño del botón en pantallas pequeñas */
+        font-size: 14px;       /* Tamaño de texto más pequeño */
+    }
+}
+
+
+
+/************************FIN NAV*********************************************/
+
+/* Estilo para el contenedor de la Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Hace que la sección ocupe el 100% del alto de la ventana */
+    background-image: url('img/bannerince.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen en la pantalla */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    padding-left: 50px; /* Añade espacio a la izquierda para el texto */
+    color: white; /* El color del texto será blanco */
+  }
+
+  /* Estilo del texto dentro de la Hero Section */
+  .hero h1 {
+    font-size: 4rem; /* Tamaño del título */
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5rem; /* Tamaño del párrafo */
+    max-width: 600px; /* Limita el ancho del texto */
+  }
