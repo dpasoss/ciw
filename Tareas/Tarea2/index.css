@@ -5,103 +5,108 @@
 }
 
 
-/* Estilo para el navbar */
-.navbar {
-    background-color: transparent !important;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
+.btnordenar{
+    font-family: 'Open Sans', sans-serif;
+       font-size: 1.7rem !important;
+         text-decoration: none;
+      
+   }
 
-/* Estilo para el logo */
-.navbar-logo {
-    height: 70px; /* Tamaño ajustado del logo */
-    width: auto;
-}
-
-/* Estilo para los elementos de la lista (nav items) */
-.navbar-nav .nav-item {
-    margin-right: 17px; /* Espacio horizontal entre los items */
-}
-
-
-/* Estilo para los enlaces de navegación */
-.navbar-nav .nav-link {
-    margin-left: 10px;
-    color: rgb(85, 85, 85) ;/* Texto blanco */
-    font-weight: bold;
-    padding: 30px 35px; /* Espaciado alrededor de los enlaces */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
-}
-
-.navbar-nav .nav-link:hover {
-    color: #d01f1f; /* Color dorado al pasar el mouse */
-    background-color: transparent; /* Fondo transparente */
-}
-
-/* Estilo para el enlace activo */
-.navbar-nav .nav-link.active {
-    color: #d01f1f; /* Color dorado para el enlace activo */
-    border-bottom: 2px solid #d01f1f; /* Subrayado dorado */
-}
-
-/* Estilo para el dropdown */
-.navbar-nav .dropdown-menu {
-    background-color: gray; /* Fondo del dropdown en azul más claro */
-    border: none;
-}
-
-.navbar-nav .dropdown-item {
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: #003366; /* Fondo oscuro al pasar el mouse */
-}
-
-/* Estilo para el submenu */
-.dropdown-submenu .dropdown-menu {
-    background-color: gray; /* Mantiene el mismo color del menú principal */
-    left: 100%;
-    top: 0;
-    margin-top: 0;
-}
-
-.dropdown-submenu:hover .dropdown-menu {
-    display: block;
-}
-
-/* Botón de colapso del navbar (en pantallas pequeñas) */
-.navbar-toggler {
-    border-color: #d01f1f; /* Borde blanco semitransparente */
-    background-color: gray;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícono de menú personalizado */
-}
-
-/* Ajustes responsivos */
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        text-align: center;
-    }
-    
-    .navbar-logo {
-        height: 60px; /* Tamaño más pequeño del logo en pantallas pequeñas */
-    }
-    
-    .nav-item {
-        margin-bottom: 1rem;
-    }
+   /*NAVEGACION SCROLLING*/
+   
+   .navigation-wrap {
+       position: fixed;
+       width: 100%;
+       left: 0;
+       z-index: 10000;
+       transition: all 0.3s ease-out;
+   }
+   
+   .navigation-wrap .nav-item {
+       /*padding: 0 0, 625rem;*/
+       transition: all 0.3s linear;
+   }
+   
+   .navbar-nav .nav-item {
+    margin-right: 13px; /* Espaciado entre los elementos de navegación */
 }
 
 
+   .nav-link {
+       font-size: 1.2rem;
+       font-weight: 600;
+       text-transform: capitalize;
+       letter-spacing: 1px;
+       color: #fff;
+   }
+   
+   .nav-link:hover {
+       color: #bd262a;
+   }
+   
+   .navbar-collapse {
+       text-align: center;
+   }
+   
+   .navigation-wrap.scroll-on {
+       position: fixed;
+       background-color: #fff;
+       top: 0;
+       left: 0;
+       width: 100%;
+       box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
+       transition: all 0.15s ease-in-out 0s;
+   }
+   
+   .navigation-wrap.scroll-on .nav-link {
+       color: #000;
+   }
+   
+   .navigation-wrap.scroll-on .nav-link:hover,
+   .navigation-wrap.scroll-on .nav-link.active {
+       color: #bd262a;
+   }
+
+   /* BOTON ORDENAR*/
+   
+   .btnOrder {
+       padding: 20px;
+       background-color: #bd262a;
+       color: #fff;
+       outline: none;
+       border: none;
+       border-radius: 5px;
+       font-size: 18px;
+       font-weight: bold;
+   }
+   /* MENU HAMBURGUESA */
+   
+   .navbar-toggler {
+       background-color: #d6dbe3;
+       border: 2px solid #fff;
+   }
+   
+   .navbar-toggler:hover {
+       background-color: #d6dbe3;
+   }
+   
+   .custom-toggler.navbar-toggler {
+       border-color: #fff;
+   }
+   
+   .custom-toggler .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
+   
+   .custom-toggler .navbar-toggler-icon:hover {
+       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
 
 /* Estilo personalizado para el botón "Campus Virtual" */
 .nav-item .btn.btn-danger {
-    margin-top: 20px;
-    border: 1.3px solid #003366;  
+ 
+    border: 1.3px solid #fff;
+    background-color:rgb(0, 0, 0, 0.09); 
     border-radius: 30px;        
     padding: 10px 20px;         
     font-size: 16px;            
@@ -134,7 +139,7 @@
 .hero {
     position: relative;
     height: 100vh; /* Hace que la sección ocupe el 100% del alto de la ventana */
-    background-image: url('img/bannerince.jpg'); /* Añade la imagen de fondo */
+    background-image: url('img/banner3.webp'); /*Añade la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
     background-position: center; /* Centra la imagen en la pantalla */
     display: flex;
@@ -144,13 +149,53 @@
     color: white; /* El color del texto será blanco */
   }
 
-  /* Estilo del texto dentro de la Hero Section */
-  .hero h1 {
-    font-size: 4rem; /* Tamaño del título */
+
+
+  .founders-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    text-align: center; /* Centra el texto debajo de la imagen */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .about-us {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .about-us .about-text h2 {
+    color: #004aad;
+    font-size: 36px;
+    font-weight: bold;
     margin-bottom: 20px;
   }
-
-  .hero p {
-    font-size: 1.5rem; /* Tamaño del párrafo */
-    max-width: 600px; /* Limita el ancho del texto */
+  
+  .about-us .about-text p {
+    font-family: "Poppins" "san-serif"; 
+    font-size: 23px;
+    line-height: 1.6;
+    color: #555;
   }
+  
+  .about-us .about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .about-us .about-text, .about-us .about-image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .about-us .about-text {
+      order: 2;
+    }
+  
+    .about-us .about-image {
+      order: 1;
+    }
+  }
+  
