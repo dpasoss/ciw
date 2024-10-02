@@ -15,7 +15,7 @@
    /*NAVEGACION SCROLLING*/
    
    .navigation-wrap {
-       position: fixed;
+       position: absolute;
        width: 100%;
        left: 0;
        z-index: 10000;
@@ -28,7 +28,8 @@
    }
    
    .navbar-nav .nav-item {
-    margin-right: 13px; /* Espaciado entre los elementos de navegación */
+    margin-right: 7px; /* Espaciado entre los elementos de navegación */
+    margin-top: -20px;
 }
 
 
@@ -82,6 +83,7 @@
    /* MENU HAMBURGUESA */
    
    .navbar-toggler {
+       display: block;
        background-color: #d6dbe3;
        border: 2px solid #fff;
    }
@@ -123,17 +125,56 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-/* Estilo del botón en dispositivos móviles (ajuste de tamaño) */
+
+/* Estilos para el menú dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(253, 253, 253, 0.3);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+/* Submenú estilo: Para que el segundo nivel de menús dropdown se muestre a la derecha */
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Estilo que posiciona el submenú secundario a la derecha */
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%; /* Hace que el menú secundario se despliegue hacia la derecha */
+    margin-top: -6px;
+    margin-left: 0.1rem;
+}
+
+/* Mostrar el menú al hacer hover (se puede usar con tu JavaScript) */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
 @media (max-width: 768px) {
-    .nav-item .btn.btn-danger {
-        padding: 8px 15px;     /* Reducir el tamaño del botón en pantallas pequeñas */
-        font-size: 14px;       /* Tamaño de texto más pequeño */
+    .navbar-nav .nav-item {
+        margin-top: 0; /* Ajusta el margen para evitar problemas de diseño en móviles */
     }
 }
 
 
 
-/************************FIN NAV*********************************************/
+
+/************************FIN NAV***********************************/
 
 /* Estilo para el contenedor de la Hero Section */
 .hero {
@@ -150,52 +191,119 @@
   }
 
 
-
-  .founders-text {
-    font-size: 14px;
-    font-style: italic;
-    color: #777;
-    text-align: center; /* Centra el texto debajo de la imagen */
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-  }
-  
   .about-us {
-    padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 60px 0; /* Espaciado alrededor de la sección */
   }
   
-  .about-us .about-text h2 {
-    color: #004aad;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  .about-us h2 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    font-weight: 700; /* Negrita */
+    color: #021a87; /* Color oscuro para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
   }
   
-  .about-us .about-text p {
-    font-family: "Poppins" "san-serif"; 
-    font-size: 23px;
-    line-height: 1.6;
-    color: #555;
+  .about-us p {
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor para el texto */
+    line-height: 1.8; /* Espaciado entre líneas */
+    color: #555; /* Color gris oscuro para el texto */
+    margin-bottom: 40px; /* Espaciado entre el párrafo y los demás elementos */
   }
   
-  .about-us .about-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
   }
   
-  @media (max-width: 768px) {
-    .about-us .about-text, .about-us .about-image {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    .about-us .about-text {
-      order: 2;
-    }
-  
-    .about-us .about-image {
-      order: 1;
-    }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Esquinas redondeadas en el video */
+    border: none; /* Eliminar borde del iframe */
   }
   
+
+  /*********************************FIN NOSOTROS****************************/
+  .cursos-carousel {
+    padding: 40px 0; /* Espaciado superior e inferior */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.cursos-titulos {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.cursos-titulos h2 {
+    font-size: 36px; /* Tamaño del título */
+    color:#b10c0c; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Eliminar márgenes */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.cursos-titulos p {
+    font-size: 22px !important; /* Tamaño del subtítulo */
+    color: #021a87 !important; /* Color gris para el subtítulo */
+    margin: 5px 0; /* Márgenes superior e inferior */
+}
+
+
+
+  .cursos-carousel {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.cursos-carousel .owl-carousel .item {
+    position: relative; /* Mantener el contenedor relativo */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+.cursos-carousel .owl-carousel .item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.cursos-carousel .owl-carousel .item-info {
+    position: absolute; /* Posicionar el banner de forma absoluta */
+    bottom: 0; /* Anclar al fondo del contenedor */
+    left: 0; /* Comenzar desde el borde izquierdo */
+    right: 0; /* Extender hasta el borde derecho */
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    color: #fff; /* Color del texto en blanco */
+    padding: 20px; /* Espaciado interno del banner */
+    border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
+    text-align: left; /* Alinear texto a la izquierda */
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+.cursos-carousel .owl-carousel .item:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse sobre la imagen */
+}
+
+.cursos-carousel .owl-carousel .item:hover .item-info {
+    opacity: 1; /* Mostrar el banner al hacer hover */
+}
+
+.cursos-carousel h3 {
+    font-size: 24px; /* Tamaño del título */
+    margin: 0 0 10px; /* Márgenes */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.cursos-carousel p {
+    font-size: 16px; /* Tamaño del texto del subtítulo */
+    margin: 0; /* Sin márgenes */
+    color: #ddd; /* Color del texto */
+}
