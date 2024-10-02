@@ -192,25 +192,46 @@
 
 
   .about-us {
-    background-color: #f9f9f9; /* Color de fondo suave */
+    background-color: #021a87; /* Color de fondo suave */
     padding: 60px 0; /* Espaciado alrededor de la sección */
   }
   
   .about-us h2 {
+    margin-top: 90px;
     font-size: 2.5rem; /* Tamaño grande para el título */
     font-weight: 700; /* Negrita */
-    color: #021a87; /* Color oscuro para el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #f0f0f0; 
+    margin-bottom: 20px; 
   }
   
   .about-us p {
-    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor para el texto */
+    font-size: 1.3rem; /* Tamaño de fuente ligeramente mayor para el texto */
     line-height: 1.8; /* Espaciado entre líneas */
-    color: #555; /* Color gris oscuro para el texto */
+    color: #fff; /* Color gris oscuro para el texto */
     margin-bottom: 40px; /* Espaciado entre el párrafo y los demás elementos */
   }
   
+  .btn-more-info {
+    display: inline-block; /* Asegurarse de que el botón sea un bloque en línea */
+    margin-top: 10px; /* Espacio superior para el botón */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #b10c0c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-more-info:hover {
+    background-color: #720e0e; /* Color de fondo más oscuro al hacer hover */
+    transform: translateY(-5px); /* Levantar el botón al hacer hover */
+}
+
+
   .video-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 100%;
     position: relative;
     padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
@@ -232,17 +253,20 @@
   .cursos-carousel {
     padding: 40px 0; /* Espaciado superior e inferior */
     background-color: #f9f9f9; /* Fondo claro */
+    height: 600px;
 }
 
 .cursos-titulos {
+    margin-top: 70px;
     text-align: center; /* Centrar el texto */
     margin-bottom: 30px; /* Espacio inferior */
+    
 }
 
 .cursos-titulos h2 {
-    font-size: 36px; /* Tamaño del título */
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    font-weight: 700; /* Negrita */
     color:#b10c0c; /* Color del texto */
-    font-weight: bold; /* Negrita */
     margin: 0; /* Eliminar márgenes */
     padding: 10px 0; /* Espaciado interno */
 }
@@ -306,4 +330,99 @@
     font-size: 16px; /* Tamaño del texto del subtítulo */
     margin: 0; /* Sin márgenes */
     color: #ddd; /* Color del texto */
+}
+
+
+
+
+
+/*************************************************************************/
+
+
+.metodologia {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.metodologia h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #b10c0c;
+    margin-bottom: 20px;
+}
+
+.metodologia p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.metodos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.metodo {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.metodo h3 {
+    font-size: 24px;
+    color: #b10c0c;
+}
+
+.beneficios {
+    text-align: center;
+}
+
+.beneficios h3 {
+    font-size: 24px;
+    color: #b10c0c;
+}
+
+.beneficios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.beneficios li {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonios {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonios blockquote {
+    font-size: 20px;
+    color: #555;
+    margin: 20px auto;
+    max-width: 600px;
+    border-left: 4px solid #b10c0c;
+    padding-left: 20px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: #b10c0c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #921010;
 }
