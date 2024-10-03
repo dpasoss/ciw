@@ -260,6 +260,7 @@
     margin-top: 70px;
     text-align: center; /* Centrar el texto */
     margin-bottom: 30px; /* Espacio inferior */
+    font-family: "Poppins", sans-serif;
     
 }
 
@@ -269,12 +270,14 @@
     color:#b10c0c; /* Color del texto */
     margin: 0; /* Eliminar márgenes */
     padding: 10px 0; /* Espaciado interno */
+    font-family: "Poppins", sans-serif;
 }
 
 .cursos-titulos p {
     font-size: 22px !important; /* Tamaño del subtítulo */
     color: #021a87 !important; /* Color gris para el subtítulo */
     margin: 5px 0; /* Márgenes superior e inferior */
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -324,12 +327,14 @@
     margin: 0 0 10px; /* Márgenes */
     color: #fff; /* Color del texto */
     font-weight: bold; /* Negrita */
+    font-family: "Poppins", sans-serif;
 }
 
 .cursos-carousel p {
     font-size: 16px; /* Tamaño del texto del subtítulo */
     margin: 0; /* Sin márgenes */
     color: #ddd; /* Color del texto */
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -337,92 +342,38 @@
 
 
 /*************************************************************************/
+.sectionTwo h2 {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
+    color: #021a87;
+    font-size: 45px;
+    font-weight: bold; /* Negrita */
+  }
+  
+  .sectionTwo p {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+    line-height: 30px;
+    
+  }
 
-
-.metodologia {
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-.metodologia h2 {
-    text-align: center;
-    font-size: 36px;
-    color: #b10c0c;
-    margin-bottom: 20px;
-}
-
-.metodologia p {
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.metodos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-.metodo {
-    width: 30%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
-.metodo h3 {
-    font-size: 24px;
-    color: #b10c0c;
-}
-
-.beneficios {
-    text-align: center;
-}
-
-.beneficios h3 {
-    font-size: 24px;
-    color: #b10c0c;
-}
-
-.beneficios ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.beneficios li {
-    font-size: 18px;
-    color: #333;
-}
-
-.testimonios {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.testimonios blockquote {
-    font-size: 20px;
-    color: #555;
-    margin: 20px auto;
-    max-width: 600px;
-    border-left: 4px solid #b10c0c;
-    padding-left: 20px;
-}
-
-.btn-contacto {
-    display: inline-block;
+  .sectionTwo {
+    margin-top: 30px;
+  }
+  
+  .sectionTwo i {
+    border-radius: 50% !important;
+    width: 6.25rem;
+    height: 6.25rem;
     background-color: #b10c0c;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-contacto:hover {
-    background-color: #921010;
-}
+    color: #ffffff;
+    line-height: 6.25rem;
+    font-size: 2.1875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .sectionTwo h3 {
+    padding-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+  }
