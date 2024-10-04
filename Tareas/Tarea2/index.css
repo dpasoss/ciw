@@ -488,7 +488,26 @@
   
 
   /************************************************************************/
-  /* Estilos para la sección de testimonios */
+/* Estilos para la sección de testimonios */
+.sectionTestimonios {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sectionTestimonios h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sectionTestimonios .info {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
 /* Ajustes del carrusel de testimonios */
 .owl-carousel .item {
     display: flex;
@@ -500,10 +519,21 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen circular para cada testimonio */
+.pic img {
+    width: 120px; /* Ajusta el tamaño según prefieras */
+    height: 120px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para el texto de los testimonios */
 .member-info h4 {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
@@ -512,9 +542,24 @@
     color: #666;
 }
 
-.pic img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+/* Efectos de hover en las tarjetas de testimonios */
+.member:hover {
+    transform: translateY(-5px); /* Efecto hover para levantar la tarjeta */
+    transition: transform 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    .member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pic {
+        margin-bottom: 15px;
+    }
+
+    .member-info {
+        text-align: center;
+    }
 }
