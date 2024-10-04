@@ -323,7 +323,7 @@
 
 <section class="">
   <div class="container-sm-6 pt-5">
-      <h2 class="titulos text-center" data-translate="testimonios_titulo">Testimonios de pacientes</h2>
+      <h2 class="titulos text-center" data-translate="testimonios_titulo">Estudiantes satisfechos</h2>
       <div class="pt-5"></div>
       <div class="testimonials_container">
           <div class="testimonials owl-carousel owl-theme">
@@ -368,6 +368,31 @@
 </section>
          
 
+<section id="info-form" class="info-form">
+  <div class="container-sm-6 pt-5">
+      <h2 class="titulos text-center" data-translate="info_form_titulo">Solicitar Información</h2>
+      <div class="pt-5"></div>
+      <form id="request-info" action="tu_script.php" method="POST">
+          <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="phone">Número de Teléfono:</label>
+              <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Información</button>
+      </form>
+  </div>
+</section>
 
 
 

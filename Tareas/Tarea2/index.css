@@ -545,3 +545,34 @@
     color: #b10c0c;
 }
 
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las flechas */
+    margin-top: 15px; /* Espacio superior */
+}
+
+.owl-prev, .owl-next {
+
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 40px; /* Ancho */
+    height: 40px; /* Altura */
+    display: flex; /* Para centrar el contenido */
+    /* align-items: center; Alineación vertical */
+    /* justify-content: center; Alineación horizontal */
+    font-size: 20px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+
+
+.owl-prev {
+    margin-right: 10px; /* Espacio entre la flecha anterior y el carrusel */
+}
+
+.owl-next {
+    margin-left: 10px; /* Espacio entre la flecha siguiente y el carrusel */
+}
