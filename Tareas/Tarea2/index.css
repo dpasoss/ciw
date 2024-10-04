@@ -192,7 +192,7 @@
 
 
   .about-us {
-    background-color: #021a87; /* Color de fondo suave */
+    background-color: #ededed; /* Color de fondo suave */
     padding: 60px 0; /* Espaciado alrededor de la sección */
   }
   
@@ -200,14 +200,14 @@
     margin-top: 90px;
     font-size: 2.5rem; /* Tamaño grande para el título */
     font-weight: 700; /* Negrita */
-    color: #f0f0f0; 
+    color: #021a87; 
     margin-bottom: 20px; 
   }
   
   .about-us p {
     font-size: 1.3rem; /* Tamaño de fuente ligeramente mayor para el texto */
     line-height: 1.8; /* Espaciado entre líneas */
-    color: #fff; /* Color gris oscuro para el texto */
+    color: #3d3d3d; /* Color gris oscuro para el texto */
     margin-bottom: 40px; /* Espaciado entre el párrafo y los demás elementos */
   }
   
@@ -251,90 +251,118 @@
 
   /*********************************FIN NOSOTROS****************************/
   .cursos-carousel {
-    padding: 40px 0; /* Espaciado superior e inferior */
-    background-color: #f9f9f9; /* Fondo claro */
-    height: 600px;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 .cursos-titulos {
     margin-top: 70px;
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 30px; /* Espacio inferior */
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.cursos-titulos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b10c0c;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.cursos-titulos p {
+    font-size: 22px !important;
+    color: #021a87 !important;
+    margin: 5px 0;
+    
+}
+
+.owl-carousel .item {
+    margin: 0 15px;
+}
+
+.cursos-carousel .owl-carousel .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cursos-carousel .owl-carousel .item-info {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+    height: 180px; /* Altura fija para todos los cuadros de texto */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    
+}
+
+.cursos-carousel h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #333;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  
+}
+
+.cursos-carousel p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
     font-family: "Poppins", sans-serif;
     
 }
 
-.cursos-titulos h2 {
-    font-size: 2.5rem; /* Tamaño grande para el título */
-    font-weight: 700; /* Negrita */
-    color:#b10c0c; /* Color del texto */
-    margin: 0; /* Eliminar márgenes */
-    padding: 10px 0; /* Espaciado interno */
-    font-family: "Poppins", sans-serif;
+.cursos-carousel .owl-carousel .item a {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    color: inherit; /* Mantener el color del texto del enlace */
 }
 
-.cursos-titulos p {
-    font-size: 22px !important; /* Tamaño del subtítulo */
-    color: #021a87 !important; /* Color gris para el subtítulo */
-    margin: 5px 0; /* Márgenes superior e inferior */
-    font-family: "Poppins", sans-serif;
-}
-
-
-
-  .cursos-carousel {
-    padding: 40px 0px;
-    text-align: center;
-}
-
-.cursos-carousel .owl-carousel .item {
-    position: relative; /* Mantener el contenedor relativo */
-    overflow: hidden; /* Evitar que el contenido se desborde */
-}
-
-.cursos-carousel .owl-carousel .item img {
-    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    transition: transform 0.3s ease; /* Efecto de transición suave */
-}
-
-.cursos-carousel .owl-carousel .item-info {
-    position: absolute; /* Posicionar el banner de forma absoluta */
-    bottom: 0; /* Anclar al fondo del contenedor */
-    left: 0; /* Comenzar desde el borde izquierdo */
-    right: 0; /* Extender hasta el borde derecho */
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
-    color: #fff; /* Color del texto en blanco */
-    padding: 20px; /* Espaciado interno del banner */
-    border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
-    border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
-    text-align: left; /* Alinear texto a la izquierda */
-    opacity: 0; /* Comienza invisible */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
-}
-
-.cursos-carousel .owl-carousel .item:hover img {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse sobre la imagen */
-}
 
 .cursos-carousel .owl-carousel .item:hover .item-info {
-    opacity: 1; /* Mostrar el banner al hacer hover */
+    transform: scale(1.05); /* Zoom al cuadro de texto */
 }
 
-.cursos-carousel h3 {
-    font-size: 24px; /* Tamaño del título */
-    margin: 0 0 10px; /* Márgenes */
-    color: #fff; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    font-family: "Poppins", sans-serif;
+.cursos-carousel .owl-carousel .item-info:hover {
+    transform: scale(1.05); /* Zoom al cuadro de texto al hacer hover */
 }
 
-.cursos-carousel p {
-    font-size: 16px; /* Tamaño del texto del subtítulo */
-    margin: 0; /* Sin márgenes */
-    color: #ddd; /* Color del texto */
-    font-family: "Poppins", sans-serif;
+
+.item-info {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos internos se apilen verticalmente */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    height: 100%; /* Asegura que ocupe el 100% de la altura disponible */
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: transparent;
+    border-color: #021a87;
+    color: #021a87;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+    transition: background-color 0.3s ease;
+    width: 150px; /* Establece un ancho fijo */
+}
+
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+    color: #fff;
 }
 
 
@@ -346,7 +374,7 @@
     font-family: "Poppins", sans-serif;
     padding-bottom: 20px;
     color: #021a87;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold; /* Negrita */
   }
   
@@ -359,7 +387,8 @@
   }
 
   .sectionTwo {
-    margin-top: 30px;
+    background-color: #ededed;
+
   }
   
   .sectionTwo i {
@@ -377,3 +406,85 @@
     padding-bottom: 15px;
     font-family: "Poppins", sans-serif;
   }
+
+
+  /***********************************************************************/
+
+  .pricing-section {
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .pricing-section h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    margin-bottom: 70px;
+    color: #b10c0c;
+    font-weight: bold;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #021a87;
+    margin-bottom: 15px;
+  }
+  
+  .card .price {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .card ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .btn-select-plan {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #021a87;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-select-plan:hover {
+    background-color: #020d3d;
+    border-color: #020d3d;
+  }
+  
+
+  /************************************************************************/
