@@ -46,3 +46,27 @@
         });
       });
       
+
+
+
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      loop: true,               /* Hace que el carrusel sea infinito */
+      margin: 10,               /* Espacio entre elementos */
+      nav: true,                /* Flechas de navegación */
+      responsive: {
+          0: {
+              items: 1          /* Un testimonio visible en pantallas pequeñas */
+          },
+          600: {
+              items: 2          /* Dos testimonios visibles en pantallas medianas */
+          },
+          1000: {
+              items: 2          /* Dos testimonios visibles en pantallas grandes */
+          }
+      }
+  });
+});
+
