@@ -488,78 +488,60 @@
   
 
   /************************************************************************/
-/* Estilos para la sección de testimonios */
-.sectionTestimonios {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-    text-align: center;
+  .testimonials_container {
+    overflow: hidden; 
 }
 
-.sectionTestimonios h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+.testimonials {
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
 }
 
-.sectionTestimonios .info {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
+.item {
+    flex: 0 0 auto; 
+    margin: 0 15px; 
+    scroll-snap-align: center; 
+    text-align: center; 
+    min-width: 300px; 
+    cursor: move;
 }
 
-/* Ajustes del carrusel de testimonios */
-.owl-carousel .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Imagen circular para cada testimonio */
-.pic img {
-    width: 120px; /* Ajusta el tamaño según prefieras */
-    height: 120px;
-    border-radius: 50%; /* Hace la imagen circular */
+.testimonials.owl-carousel .owl-item img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
-    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    margin: 0 auto;
 }
 
-/* Estilos para el texto de los testimonios */
-.member-info h4 {
-    font-size: 20px;
+
+.titulos {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    font-family: "Poppins", sans-serif;
+}
+
+.objetivo {
+    font-size: 1rem; 
+    margin-bottom: 30px; 
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 40px;
+}
+
+.titulos {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
     font-weight: bold;
-    color: #007bff;
-    margin-bottom: 10px;
+    color: #021a87;
 }
 
-.member-info p {
-    font-size: 16px;
-    color: #666;
+.testimonials .item h3 {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #b10c0c;
 }
 
-/* Efectos de hover en las tarjetas de testimonios */
-.member:hover {
-    transform: translateY(-5px); /* Efecto hover para levantar la tarjeta */
-    transition: transform 0.3s ease;
-}
-
-/* Responsividad */
-@media (max-width: 767px) {
-    .member {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .pic {
-        margin-bottom: 15px;
-    }
-
-    .member-info {
-        text-align: center;
-    }
-}
