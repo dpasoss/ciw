@@ -1,196 +1,113 @@
 
 
-.body {
-    font-family: "Poppins", sans-serif;
+
+
+body {
+    font-family:"Poppins", sans-serif;
+    /* permite hacer el desplazamiento de secciones mas suave */
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #242424;
 }
 
 
-.btnordenar{
-    font-family: 'Open Sans', sans-serif;
-       font-size: 1.7rem !important;
-         text-decoration: none;
-      
-   }
-
-   /*NAVEGACION SCROLLING*/
-   
-   .navigation-wrap {
-       position: absolute;
-       width: 100%;
-       left: 0;
-       z-index: 10000;
-       transition: all 0.3s ease-out;
-   }
-   
-   .navigation-wrap .nav-item {
-       /*padding: 0 0, 625rem;*/
-       transition: all 0.3s linear;
-   }
-   
-   .navbar-nav .nav-item {
-    margin-right: 7px; /* Espaciado entre los elementos de navegación */
-    margin-top: -20px;
+.nav-item a {
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: all 0.7s ease-in;
 }
 
+.nav-item a:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+/* hacemos espacio entre cada opcion del menu  */
 
-   .nav-link {
-       font-size: 1.2rem;
-       font-weight: 600;
-       text-transform: capitalize;
-       letter-spacing: 1px;
-       color: #021a87;
-   }
-   
-   .nav-link:hover {
-       color: #bd262a;
-   }
-   
-   .navbar-collapse {
-       text-align: center;
-   }
-   
-   .navigation-wrap.scroll-on {
-       position: fixed;
-       background-color: #fff;
-       top: 0;
-       left: 0;
-       width: 100%;
-       box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
-       transition: all 0.15s ease-in-out 0s;
-   }
-   
-   .navigation-wrap.scroll-on .nav-link {
-       color: #000;
-   }
-   
-   .navigation-wrap.scroll-on .nav-link:hover,
-   .navigation-wrap.scroll-on .nav-link.active {
-       color: #bd262a;
-   }
-
-   /* BOTON ORDENAR*/
-   
-   .btnOrder {
-       padding: 20px;
-       background-color: #bd262a;
-       color: #fff;
-       outline: none;
-       border: none;
-       border-radius: 5px;
-       font-size: 18px;
-       font-weight: bold;
-   }
-   /* MENU HAMBURGUESA */
-   
-   .navbar-toggler {
-       display: block;
-       background-color: #d6dbe3;
-       border: 2px solid #fff;
-   }
-   
-   .navbar-toggler:hover {
-       background-color: #d6dbe3;
-   }
-   
-   .custom-toggler.navbar-toggler {
-       border-color: #fff;
-   }
-   
-   .custom-toggler .navbar-toggler-icon {
-       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-   }
-   
-   .custom-toggler .navbar-toggler-icon:hover {
-       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-   }
-
-/* Estilo personalizado para el botón "Campus Virtual" */
-.nav-item .btn.btn-danger {
- 
-    border: 1.3px solid #021a87;
-    background-color:rgb(0, 0, 0, 0.03); 
-    border-radius: 30px;        
-    padding: 10px 20px;         
-    font-size: 16px;            
-    font-weight: bold;         
-    transition: all 0.3s ease;  
-    color: #021a87;               
+.navigation-wrap .nav-item {
+    padding: 10px 0;
 }
 
-/* Efecto hover para el botón */
-.nav-item .btn.btn-danger:hover {
-    background-color: #b10c0c;  /* Fondo más oscuro al pasar el mouse */
-    border-color: #8b0808;      /* Borde más oscuro en hover */
-    color: #f0f0f0;             /* Cambiar el color del texto */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+.navbar-toggler {
+    /* le quitamos el borde que trae por defecto al icono hamburguesa  */
+    border: none;
 }
+/* le decimos que no tenga sombra el icono del menu hamburguesa  */
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* estilo al icono hamburguesa  */
 
-/* Estilos para el menú dropdown */
+.navbar-toggler i {
+    color: #000;
+    font-size: 27px;
+}
+/* centra el menu cuando esta en dispositivos mas pequeños  */
+
+.navbar-nav {
+    text-align: center;
+}
+/* Estilos al dropdown */
+/* le damos estilos al menu tipo dropdown  */
+
 .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    text-align: left;
-    list-style: none;
-    background-color: rgba(253, 253, 253, 0.3);
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    background-color: gray; /* Color de fondo del dropdown */
+    border: none; /* Sin bordes */
+    padding: 0; /* Eliminar el padding predeterminado */
+    margin: 0; /* Eliminar el margin predeterminado */
+    box-shadow: none; /* Sin sombra si lo deseas */
+    width: auto;
+    
 }
 
-/* Submenú estilo: Para que el segundo nivel de menús dropdown se muestre a la derecha */
-.dropdown-submenu {
-    position: relative;
+.dropdown-item {
+    color: #fff; /* Color del texto */
+    padding: 5px 10px; /* Espaciado para los elementos del dropdown */
+    color: #fff; /* Color del texto */
+    display: block; /* Para que el área de clic cubra todo el ancho */
 }
 
-/* Estilo que posiciona el submenú secundario a la derecha */
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%; /* Hace que el menú secundario se despliegue hacia la derecha */
-    margin-top: -6px;
-    margin-left: 0.1rem;
+.dropdown-item:hover {
+    background-color: #fff; /* Color de fondo al hacer hover */
+    color: #000; /* Color del texto al hacer hover */
+    border-radius: 0;
 }
 
-/* Mostrar el menú al hacer hover (se puede usar con tu JavaScript) */
-.dropdown-submenu:hover .dropdown-menu {
-    display: block;
+.seccion {
+    background-image: url("../img/b2.jpg");
+    height: 890px;
+    background-size: cover; /* Ajusta la imagen para cubrir el área del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 
-@media (max-width: 768px) {
-    .navbar-nav .nav-item {
-        margin-top: 0; /* Ajusta el margen para evitar problemas de diseño en móviles */
-    }
+.seccion h1 {
+    padding-top: 260px;
+    font-size: 85px;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+}
+
+/* Ajuste de tamaño del logo en el navbar */
+.navbar-brand img {
+    width: 100px;  /* Cambia el tamaño a lo que necesites */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 100%;  /* Asegura que la imagen no exceda el contenedor */
+}
+
+/* Opcional: Ajusta el padding/margin si es necesario */
+.navbar-brand {
+    padding: 5px 0;  /* Ajusta este valor si necesitas más o menos espacio alrededor del logo */
 }
 
 
-
-
-/************************FIN NAV***********************************/
-
-.hero {
-    background-color: #f8f9fa; /* Color de fondo */
-    padding: 50px 0; /* Espaciado vertical */
-}
-
-.hero-text {
-    padding-right: 30px; /* Espaciado a la derecha del texto */
-    font-family:  "Poppins", sans-serif;
-}
-
-.hero-image img {
-    margin-top: 60px;
-    max-width: 100%; /* Asegura que la imagen sea responsive */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-}
 
 .btn-primary {
     margin-top: 20px; /* Espaciado arriba del botón */
@@ -644,19 +561,20 @@
 
 .btn-whatsapp {
     position: fixed;
-    left: 20px; 
-    bottom: 20px; 
-    z-index: 1000; 
-    display: block; 
-    width: 20px; 
-    height: auto; 
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: block;
+    width: 80px; /* Ajustar al tamaño de la imagen */
+    height: auto;
+    transition: opacity 0.3s; /* Para una transición suave al ocultar */
 }
 
-.img-whatsapp {
-    width: 4px; 
-    height: 4px; 
-   
+.btn-whatsapp.hidden {
+    opacity: 0; /* Oculta el botón */
+    pointer-events: none; /* Evita que se haga clic en el botón oculto */
 }
+
 
 
 
@@ -678,8 +596,8 @@
     display: flex; /* Usar flexbox para la distribución */
     justify-content: space-around; /* Espaciado entre elementos */
     align-items: center; /* Centrar verticalmente */
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
-    margin-bottom: 15px; /* Espacio debajo del contenido del footer */
+    flex-wrap: wrap; 
+   
 }
 
 .social-media {
@@ -715,7 +633,4 @@
     border-top: 1px solid #ccc; /* Línea separadora */
 }
 
-.footer-bottom p {
-    margin: 0; /* Sin márgenes */
-}
 

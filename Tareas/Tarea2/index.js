@@ -70,3 +70,18 @@ $(document).ready(function(){
   });
 });
 
+
+window.addEventListener('scroll', function() {
+    const btnWhatsApp = document.querySelector('.btn-whatsapp');
+    const footer = document.querySelector('.footer');
+
+    // Obtener la posición del footer
+    const footerRect = footer.getBoundingClientRect();
+    
+    // Comprobar si el footer está visible en la ventana
+    if (footerRect.top <= window.innerHeight) {
+        btnWhatsApp.classList.add('hidden'); // Ocultar el botón
+    } else {
+        btnWhatsApp.classList.remove('hidden'); // Mostrar el botón
+    }
+});
