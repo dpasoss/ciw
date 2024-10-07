@@ -482,8 +482,6 @@ nav {
     width: 40px; /* Ancho */
     height: 40px; /* Altura */
     display: flex; /* Para centrar el contenido */
-    /* align-items: center; Alineación vertical */
-    /* justify-content: center; Alineación horizontal */
     font-size: 20px; /* Tamaño de la fuente */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
@@ -576,6 +574,69 @@ nav {
 }
 
 
+.blog {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 50px 0; /* Espaciado superior e inferior */
+}
+
+.blog h2 {
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+    margin-bottom: -40px; /* Espaciado debajo del título */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #b10c0c;
+}
+
+.blog h3 {
+    font-size: 1.75rem; /* Tamaño de fuente para los subtítulos */
+    margin-bottom: 15px; /* Espaciado debajo de los subtítulos */
+    font-weight: normal;
+}
+
+.blog p {
+    font-size: 1rem; /* Tamaño de fuente para el texto del párrafo */
+    color: #6c757d; /* Color gris para el texto */
+    margin-bottom: 20px; /* Espaciado debajo de los párrafos */
+}
+
+.blog .btn {
+    transition: background-color 0.3s ease; /* Efecto de transición suave para el botón */
+}
+
+.blog .btn:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    color: #fff; /* Cambiar color de texto al pasar el mouse */
+}
+
+.image-container {
+    width: 70%; /* Puedes ajustar el tamaño del contenedor aquí */
+    margin: 0 auto 30px; /* Centra el contenedor y agrega margen inferior */
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+.blog-image {
+    max-width: 70%; /* Aumenta el tamaño de la imagen, puedes ajustar este valor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+/* Estilo para las columnas */
+.blog .col-md-4 {
+    margin-bottom: 30px; /* Espaciado entre columnas */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #dee2e6; /* Borde alrededor de cada columna */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para las columnas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+@media (max-width: 768px) {
+    .blog .col-md-4 {
+        margin-bottom: 20px; /* Espaciado menor en dispositivos más pequeños */
+    }
+}
 
 
 /********************************************************************/
