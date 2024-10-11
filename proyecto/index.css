@@ -23,9 +23,9 @@ body {
 }
 
 .logo {
-    margin-top: -50px;
+    margin-top: 0; /* Elimina el margin negativo */
     max-width: 250px;
-    margin-bottom: -150px;
+    margin-bottom: -70px; /* Ajusta el espacio entre el logo y el título */
 }
 
 /* Contenedor principal para imagen y texto */
@@ -93,11 +93,13 @@ body {
     .container {
         flex-direction: column;
         text-align: center;
+        align-items: center; /* Centra el contenido en el contenedor */
     }
 
     .left {
         padding-right: 0;
         margin-bottom: 20px;
+        text-align: center; /* Asegura que el texto esté centrado */
     }
 
     .right {
@@ -106,16 +108,11 @@ body {
 
     .image {
         max-width: 80%;
+        margin: 0 auto; /* Centra la imagen */
     }
 
-    /* Centrar el logo en dispositivos móviles */
-    .header {
-        justify-content: center; /* Centrar el logo en vista móvil */
-    }
-
-    /* Mover la sección de Instagram debajo de la imagen en móviles */
     .social {
-        margin-top: 20px; /* Ajustar espacio entre la imagen y la sección de Instagram */
+        margin-top: 20px;
         justify-content: center;
     }
 }
