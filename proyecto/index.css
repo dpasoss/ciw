@@ -1,0 +1,121 @@
+/* Restablecer márgenes y padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Logo en la parte superior centrado */
+.header {
+    display: flex;
+    justify-content: center; /* Centrar el logo */
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin-top: -50px;
+    max-width: 250px;
+    margin-bottom: -150px;
+}
+
+/* Contenedor principal para imagen y texto */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo para la columna de texto (lado izquierdo) */
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilo para la sección de Instagram */
+.social {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.social img {
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #cba80a;
+}
+
+/* Estilo para la columna de la imagen (lado derecho) */
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        text-align: center;
+    }
+
+    .image {
+        max-width: 80%;
+    }
+
+    /* Centrar el logo en dispositivos móviles */
+    .header {
+        justify-content: center; /* Centrar el logo en vista móvil */
+    }
+
+    /* Mover la sección de Instagram debajo de la imagen en móviles */
+    .social {
+        margin-top: 20px; /* Ajustar espacio entre la imagen y la sección de Instagram */
+        justify-content: center;
+    }
+}
