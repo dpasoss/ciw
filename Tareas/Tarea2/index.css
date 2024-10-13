@@ -8,6 +8,13 @@ nav {
     background-color: #242424;
 }
 
+.nav-link:focus, .nav-link:active {
+    color: #fff;
+    background-color: transparent; /* O el color que desees */
+    outline: none; /* Para eliminar el borde si hay uno */
+}
+
+
 
 .nav-item a {
     font-size: 17px;
@@ -16,6 +23,12 @@ nav {
     color: #fff;
     margin: 0 10px;
     transition: all 0.2s ease-in;
+}
+
+.nav-link:hover {
+    background-color: #fff; /* Mantiene el fondo blanco */
+    color: #b10c0c; /* Cambia el texto a un color oscuro para contrastar */
+    border-radius: 5px;
 }
 
 .nav-item a:hover {
@@ -83,13 +96,6 @@ nav {
 }
 
 
-.seccion h1 {
-    padding-top: 260px;
-    font-size: 85px;
-    color: #000;
-    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-    font-weight: bold;
-}
 
 
 .navbar-brand img {
