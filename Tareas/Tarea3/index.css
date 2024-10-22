@@ -1,0 +1,173 @@
+body {
+    font-family: "EB Garamond", serif;
+    margin: 0;
+}
+
+.hero {
+    background-image: url('img/love-6600904_1920.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+
+}
+
+
+
+.hero-content {
+    margin-top: -100px;
+    opacity: 0 ;
+    padding: 20px;
+    transition: opacity 3s ease; 
+
+}
+
+
+.hero-content.visible {
+    opacity: 1; 
+}
+
+
+h1 {
+    font-family: "EB Garamond", serif;
+    font-size: 5.8rem;
+    margin: 0 0 10px;
+}
+
+p {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: transparent !important; 
+    border-color: white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: white !important; 
+    border-color: white;
+    color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem; 
+    }
+
+    p {
+        font-size: 2rem; 
+    }
+
+    .hero-buttons {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .btn {
+        font-size: 20px; 
+        padding: 8px 16px; 
+    }
+}
+
+
+
+
+/*****************FIN HERO********************/
+
+
+.banner {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 60px 20px; 
+}
+
+.banner h2 {
+    font-size: 2em; 
+    margin: 0; 
+}
+
+
+/**************************************************************/
+
+
+
+.quienes-somos {
+    padding: 50px 20px; 
+    background-color: #f8f8f8; 
+}
+
+.texto {
+    margin-top: 40px;
+    font-size: 1.5rem; 
+    line-height: 1.5; 
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+.imagen-pequena {
+    width: 80%; 
+    max-width: 650px; 
+    height: auto; 
+}
+
+
+@media (max-width: 768px) {
+    .texto {
+        font-size: 1.2rem; 
+    }
+    
+    .imagen-pequena {
+        max-width: 400px; 
+    }
+
+}
+
+
+
+/********************************************************************************/
+
+
+.contador {
+    padding: 50px 20px; 
+    background-color: #333;
+    color: #f8f8f8; 
+}
+
+h2 {
+    margin-bottom: 30px; 
+}
+
+.tiempo {
+    margin: 10px 0; 
+}
+
+.tiempo span {
+    font-size: 3rem; 
+}
+
+.tiempo div {
+    font-size: 1.2rem; 
+}
