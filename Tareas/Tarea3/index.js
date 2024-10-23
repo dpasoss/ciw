@@ -1,12 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Activar la animación del contenido hero
     const heroContent = document.querySelector('.hero-content');
     heroContent.classList.add('visible'); // Añadir clase para activar la animación
-});
-
-
-
-
 
     // Establece la fecha objetivo para el 20 de noviembre de 2024
     const cuentaRegresivaFecha = new Date("2024-11-20T00:00:00").getTime();
@@ -37,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function animarContador(element, valorFinal) {
-        let valorActual = parseInt(element.innerHTML);
+        let valorActual = parseInt(element.innerHTML) || 0;
         
         // Asegura que el contador no se pase del valor final
         if (valorActual < valorFinal) {
@@ -58,3 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Actualiza el contador cada segundo
     const x = setInterval(actualizarContador, 1000);
+});
