@@ -180,23 +180,31 @@ h2 {
 
 
 
-.card {
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
-    transition: transform 0.2s;
+
+
+.proveedor-item {
+    height: 460px;
+    background: rgb(255, 250, 250);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.proveedor-item img {
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.card-body {
-    text-align: center; /* Centra el texto en el cuerpo de la tarjeta */
+.proveedor-item h4 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
 
-.card-text {
-    font-size: 1.9rem; /* Ajusta el tamaño del texto del párrafo */
-}
-
-.card-title {
-    font-size: 2.2rem;
+.proveedor-item p {
+    font-size: 0.9rem;
+    color: #777;
 }

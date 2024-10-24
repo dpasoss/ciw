@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      
+      
+
+
+
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -80,168 +90,123 @@
     </section>
     
 
-
-
-    <section class="proveedores">
+         <!-- Sección Proveedores -->
+    <section class="proveedores py-5">
         <div class="container">
-            <h2 class="text-center">Nuestros Proveedores</h2>
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/cakee.jpg" class="card-img-top" alt="Proveedor 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 1</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor1" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor1" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+            <h2 class="text-center mb-4">Nuestros Proveedores</h2>
+            <div id="proveedores-carousel" class="owl-carousel owl-theme">
+                <!-- Proveedor 1 -->
+                <div class="proveedor-item text-center">
+                    <img src="img/accesorios.jpg" class="img-fluid" alt="Proveedor 1">
+                    <h4>Boutique Amclare</h4>
+                    <p>Desde velos de novia, tocados para el peinado y arras para la ceremonia aquí podrás escoger entre una amplia variedad de accesorios con todo lo que necesitás para tu boda</p>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/bouquet.jpg" class="card-img-top" alt="Proveedor 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 2</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor2" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor2" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 2 -->
+                <div class="proveedor-item text-center">
+                    <img src="img/bouquet.jpg" class="img-fluid" alt="Proveedor 2">
+                    <h4>Floristería Marvin</h4>
+                    <p>Arte y decoración, todo en floristería, para darle ese toque de elegancia a su día especial. </p>
                 </div>
-                <!-- Card 3 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/rings.jpg" class="card-img-top" alt="Proveedor 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 3</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor3" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor3" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 3 -->
+                <div class="proveedor-item text-center">
+                    <img src="img/cakee.jpg" class="img-fluid" alt="Proveedor 3">
+                    <h4>Praliné Pastelería</h4>
+                    <p>Endulza tus momentos con nuestros deliciosos pasteles. Ofrecemos pastelería, bocadillos, mesas dulces, postres, cotice en nuestro stand.</p>
                 </div>
-                <!-- Card 4 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/dress.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 4 -->
+                <div class="proveedor-item text-center">
+                    <img src="img/comida.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Catering Service Top Food</h4>
+                    <p>Transforma tu evento en una experiencia inolvidable con nuestro catering gourmet, ofrecemos todo tipo de platillos, ajustados a sus necesidades.</p>
                 </div>
-                <!-- Card 5 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/saco.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 5 -->
+                <div class="proveedor-item text-center">
+                    <img src="img/dress.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Boutique Galatea</h4>
+                    <p>Para cada evento, tenemos el vestido perfecto que te hará brillar. Contamos con vari</p>
                 </div>
-                <!-- Card 6 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/pelo.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 6-->
+                <div class="proveedor-item text-center">
+                    <img src="img/music.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Agape Servicios Musicales</h4>
+                    <p>Servicios musicales para toda ocación, un toque de elegancia que su evento necesita, tenemos diferentes formatos.</p>
                 </div>
-                <!-- Card 6 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/makeup.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 7-->
+                <div class="proveedor-item text-center">
+                    <img src="img/mesa.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Golden Happy</h4>
+                    <p>Cada detalle cuenta: crea momentos inolvidables con nuestra decoración. Contamos con diversos paquetes de decoración, adaptados a diversas localidades,</p>
                 </div>
-                <!-- Card 7 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/mesa.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 8-->
+                <div class="proveedor-item text-center">
+                    <img src="img/rings.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Nombre Empresa 4</h4>
+                    <p>Renta de vestidos de novia y accesorios para hacerte lucir espectacular.</p>
                 </div>
-                <!-- Card 8 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/accesorios.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 9-->
+                <div class="proveedor-item text-center">
+                    <img src="img/pelo.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Nombre Empresa 4</h4>
+                    <p>Renta de vestidos de novia y accesorios para hacerte lucir espectacular.</p>
                 </div>
-                <!-- Card 9 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/comida.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 10-->
+                <div class="proveedor-item text-center">
+                    <img src="img/saco.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Nombre Empresa 4</h4>
+                    <p>Renta de vestidos de novia y accesorios para hacerte lucir espectacular.</p>
                 </div>
-                <!-- Card 10 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/tragos.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 11-->
+                <div class="proveedor-item text-center">
+                    <img src="img/makeup.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Nombre Empresa 4</h4>
+                    <p>Renta de vestidos de novia y accesorios para hacerte lucir espectacular.</p>
                 </div>
-                <!-- Card 11 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img src="img/dj.jpg" class="card-img-top" alt="Proveedor 4">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Proveedor 4</h5>
-                            <p class="card-text">Descripción breve del proveedor.</p>
-                            <a href="https://instagram.com/proveedor4" class="btn btn-primary" target="_blank">Instagram</a>
-                            <a href="https://facebook.com/proveedor4" class="btn btn-secondary" target="_blank">Facebook</a>
-                        </div>
-                    </div>
+                <!-- Proveedor 12-->
+                <div class="proveedor-item text-center">
+                    <img src="img/tragos.jpg" class="img-fluid" alt="Proveedor 4">
+                    <h4>Nombre Empresa 4</h4>
+                    <p>Renta de vestidos de novia y accesorios para hacerte lucir espectacular.</p>
                 </div>
-                <!-- Card 12 -->
-                
             </div>
         </div>
     </section>
+
+
     
-    
-
-
-
+   
 
     <script src="index.js"></script>
+
+
+    <!-- Scripts necesarios -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $("#proveedores-carousel").owlCarousel({
+              items: 3, // Número de items mostrados
+              margin: 20, // Espacio entre items
+              loop: true, // Repetir el carrusel
+              autoplay: true, // Reproducción automática
+              autoplayTimeout: 3000, // Intervalo de autoplay
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  768: {
+                      items: 2
+                  },
+                  992: {
+                      items: 3
+                  }
+              },
+              nav: true, // Botones de navegación
+              navText: ["<i class='bi bi-arrow-left-circle'></i>", "<i class='bi bi-arrow-right-circle'></i>"],
+              dots: false // Ocultar puntos de navegación
+          });
+      });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
