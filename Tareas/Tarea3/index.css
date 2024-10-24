@@ -35,12 +35,12 @@ body {
 
 h1 {
     font-family: "EB Garamond", serif;
-    font-size: 5.8rem;
+    font-size: 5.6rem;
     margin: 0 0 10px;
 }
 
 p {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     margin-bottom: 20px;
 }
 
@@ -58,7 +58,7 @@ p {
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.2s ease;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .btn:hover {
