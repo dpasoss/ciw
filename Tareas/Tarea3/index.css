@@ -18,6 +18,38 @@ body {
 }
 
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Color negro transparente */
+    z-index: 1; /* Se asegura que la capa quede detrás del contenido */
+}
+
+
+.hero-content {
+    margin-top: -100px;
+    opacity: 0 ;
+    padding: 20px;
+    transition: opacity 3s ease; 
+
+}
+
+.hero h1, .hero p {
+    position: relative; /* Para que el contenido quede por encima de la capa negra */
+    z-index: 2;
+    
+}
+
+.hero h1 {
+    font-size: 5rem; 
+    margin-bottom: 20px;
+}
+
+
 
 .hero-content {
     margin-top: -100px;
@@ -33,11 +65,6 @@ body {
 }
 
 
-h1 {
-    font-family: "EB Garamond", serif;
-    font-size: 5.6rem;
-    margin: 0 0 10px;
-}
 
 p {
     font-size: 3.1rem;
@@ -49,6 +76,26 @@ p {
     gap: 20px;
     justify-content: center;
 }
+
+.hero .btn {
+    background-color: transparent !important;
+    border-color: white;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+    font-size: 22px;
+    position: relative; /* Para que el botón quede sobre la capa negra */
+    z-index: 2; /* Asegura que esté encima de la superposición negra */
+}
+
+.hero .btn:hover {
+    background-color: white !important;
+    border-color: white;
+    color: #000;
+}
+
 
 .btn {
     background-color: transparent !important; 
@@ -87,6 +134,7 @@ p {
         font-size: 20px; 
         padding: 8px 16px; 
     }
+   
 }
 
 
@@ -106,7 +154,6 @@ p {
     font-size: 2em; 
     margin: 0; 
 }
-
 
 /**************************************************************/
 
@@ -139,8 +186,9 @@ h2 {
         font-size: 1.2rem; 
     }
     
-    .imagen-pequena {
-        max-width: 400px; 
+    .imagen-pequena { 
+        max-width: 200px; 
+        margin: 20px auto; 
     }
 
 }
@@ -178,7 +226,45 @@ h2 {
 
 /*********************************************************/
 
+.parallax-banner {
+    height: 540px;
+    background-image: url('img/b1.jpg');
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  
+  .banner-content {
+    z-index: 1; 
+  }
+  
+  .parallax-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
+  }
+  
+  h1 {
+    font-size: 3.6rem;
+    margin: 0;
+    padding: 10px 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+  }
+  
 
+
+/**********************************************************/
 
 
 
@@ -208,3 +294,103 @@ h2 {
     font-size: 0.9rem;
     color: #777;
 }
+
+
+/*****************************************************/
+
+.contact-section {
+    background-color: #333; 
+    
+}
+
+.contact-section h2 {
+    font-size: 2.7rem; 
+    color: #f8f8f8; 
+    margin-bottom: 20px; 
+}
+
+.contact-section p {
+    font-size: 1.6rem; 
+    color: #f8f8f8; 
+    margin-bottom: 15px; 
+}
+
+.contact-section a.btn {
+    color: #f8f8f87; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.contact-section img {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 450px; 
+    height: auto; 
+    margin: 20px auto; 
+}
+
+
+@media (max-width: 576px) {
+    .contact-section h2 {
+        font-size: 2rem; 
+    }
+
+    .contact-section p {
+        font-size: 1rem; 
+    }
+
+    .contact-section img {
+        max-width: 200px; 
+        margin: 20px auto; 
+    }
+}
+
+/****************************************************/
+.mapa-section h2 {
+    font-family: 'EB Garamond', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mapa-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mapa-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/***************************************************************/
+.patrocinadores-section h2 {
+    font-family: 'EB Garamond', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.patrocinador-logo {
+    max-width: 100px;
+    filter: grayscale(100%); /* Opción para mostrar los logos en escala de grises */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.patrocinador-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+
+
+

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Expo Novia</title>
+    <link rel="icon" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,20 +13,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-      
-      
-
-
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+  
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script> 
 
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     
-
-
 
 
     <section class="hero">
@@ -39,6 +36,8 @@
             </div>
         </div>
     </section>
+
+    
 
 
 
@@ -173,6 +172,15 @@
     </section>
 
 
+
+    <section class="parallax-banner d-flex justify-content-center align-items-center text-center">
+        <div class="banner-content">
+          <h1>¡Visita la feria más grandede bodas del país!</h1>
+        </div>
+      </section>
+      
+
+
     <section class="itinerario py-5">
         <div class="container">
           <h2 class="text-center mb-4">Itinerario del Evento</h2>
@@ -261,7 +269,98 @@
           </div>
         </div>
       </section>
-      
+
+
+
+      <section class="contact-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="img/b2.jpg" class="img-fluid imagen-pequena" alt="Descripción de la imagen">
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Contacta con Nosotros</h2>
+                    <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+                    <a href="https://wa.me/tu-numero" class="btn btn-success" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="mapa-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">¿Cómo llegar a la Expo Novia?</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="mapa-iframe-container">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.495644964456!2d-84.15372982491064!3d9.97585369012831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fba8dd8f0dd1%3A0xbc179f80296a308!2sCentro%20de%20Convenciones%20de%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1729825731831!5m2!1ses!2scr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="patrocinadores-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Patrocinadores</h2>
+            <div class="row justify-content-center">
+                <!-- Patrocinador 1 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/crhoycom.jpg" class="img-fluid patrocinador-logo" alt="Patrocinador 1">
+                </div>
+                <!-- Patrocinador 2 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/galatea.png" class="img-fluid patrocinador-logo" alt="Patrocinador 2">
+                </div>
+                <!-- Patrocinador 3 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/scaglietti.png" class="img-fluid patrocinador-logo" alt="Patrocinador 3">
+                </div>
+                <!-- Patrocinador 4 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/radisson.png" class="img-fluid patrocinador-logo" alt="Patrocinador 4">
+                </div>
+                <!-- Patrocinador 5 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/marriotttt.svg" class="img-fluid patrocinador-logo" alt="Patrocinador 5">
+                </div>
+                <!-- Patrocinador 6 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/mouseel.jpg" class="img-fluid patrocinador-logo" alt="Patrocinador 6">
+                </div>
+                <!-- Patrocinador 7 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/teletica.png" class="img-fluid patrocinador-logo" alt="Patrocinador 7">
+                </div>
+                <!-- Patrocinador 8 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/country.png" class="img-fluid patrocinador-logo" alt="Patrocinador 8">
+                </div>
+                <!-- Patrocinador 9 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/rooon.png" class="img-fluid patrocinador-logo" alt="Patrocinador 9">
+                </div>
+                <!-- Patrocinador 10 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/double.jpeg" class="img-fluid patrocinador-logo" alt="Patrocinador 10">
+                </div>
+                <!-- Patrocinador 11 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/siman.png" class="img-fluid patrocinador-logo" alt="Patrocinador 11">
+                </div>
+                <!-- Patrocinador 12 -->
+                <div class="col-4 col-sm-3 col-md-2 mb-4 text-center">
+                    <img src="img/exa-fm.svg" class="img-fluid patrocinador-logo" alt="Patrocinador 12">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
     
    
 
@@ -298,6 +397,7 @@
       });
     </script>
 
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
