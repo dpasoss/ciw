@@ -293,6 +293,21 @@ h3 {
     margin-top: 20px;
   }
   
+  @media (max-width: 768px) {
+    .parallax-banner {
+        height: 300px; /* Altura para móviles */
+        background-attachment: scroll; /* Cambia a scroll para móviles */
+    }
+
+    h1 {
+        font-size: 2.4rem; /* Ajustar tamaño de fuente en móviles */
+        padding: 5px; /* Menos padding en móviles */
+    }
+
+    .btn-primary {
+        margin-top: 10px; /* Ajustar margen en móviles */
+    }
+}
 
 
 /**********************************************************/
