@@ -283,3 +283,98 @@
       font-size: 1.5rem; 
     }
   }
+
+
+
+
+
+
+
+
+  /* General Section Styling */
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Carousel Items */
+  .testimonial-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-item .img-container {
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .testimonial-item h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+  }
+  
+  .testimonial-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Owl Carousel Styling */
+  .owl-carousel .owl-nav button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .owl-carousel .owl-nav button:hover {
+    color: #333;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot span {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #333;
+  }
+  
+
+
+
+
+
+
+
