@@ -1,0 +1,285 @@
+
+/* Navbar */
+.navbar {
+    padding: 0.3rem 1rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Fijar el navbar en la parte superior */
+    top: 0; /* Asegúrate de que esté pegado al top */
+    z-index: 1000; /* Para que esté por encima de otros elementos */
+    background-color: #fff; /* Fondo blanco para el navbar */
+  }
+  
+  .navbar-brand img {
+    height: 170px; 
+    width: auto; 
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0.8rem; 
+    font-size: 1rem; 
+  }
+  
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff4c7a; 
+    border-radius: 30px;
+  }
+
+
+  .navbar-nav .nav-link.btn {
+    background-color: #fff; 
+    color: #ff4c7a; 
+    font-weight: bold; 
+    padding: 0.6rem 1.2rem; 
+    border: 2px solid #ff4c7a; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    display: inline-block; 
+  }
+
+  .navbar-nav .nav-link.btn:hover {
+    background-color: #ff4c7a; 
+    color: #fff; 
+    transform: scale(1.05); 
+  }
+
+
+
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('../img/lamimi.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px; /* Añadir espacio para el navbar fijo */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+  }
+  
+  .hero-content {
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .hero .btn {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .hero .btn:hover {
+    background-color: #ff4c7a; 
+    transform: scale(1.08); 
+  }
+
+
+  @media (max-width: 768px) {
+
+    .hero {
+        background: url('../img/perlita.jpg') center center/cover no-repeat; 
+      }
+
+    .navbar-toggler {
+      border: 1px solid #ff4c7a;
+      margin-top: -40px;
+    }
+  
+
+    .navbar-brand img {
+      height: 120px;  
+      margin-top: -30px;
+    }
+  
+    
+    .navbar-nav .nav-link {
+        font-size: 1.3rem;
+        color: #ff4c7a; 
+        background-color: #fff; 
+        padding: 0.6rem 1rem; 
+        border-radius: 25px; 
+        transition: all 0.3s ease; 
+    }
+  
+    
+    .navbar-nav .nav-link.btn {
+      font-size: 1rem; 
+      padding: 0.5rem 1rem;
+    }
+  
+    .hero h1 {
+        margin-top: 50px;
+      font-size: 2rem;  
+    }
+  }
+
+
+
+
+
+  .about-us {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .about-us-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 530px; 
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .about-image img {
+      max-width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .about-text {
+      max-width: 90%; 
+    }
+  }
+
+
+  
+  
+
+
+
+
+  .benefits {
+    text-align: center;
+    padding: 4rem; 
+    background-color: #fff;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem; 
+    color: #333;
+    margin-bottom: 1rem; 
+  }
+  
+  .benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
+    padding: 0.5rem; 
+  }
+  
+  .benefit-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .benefit-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.8rem; 
+    color: #333;
+    margin: 0.8rem 0 0.5rem; 
+  }
+  
+  .benefit-item p {
+    font-size: 1rem; 
+    color: #666;
+    padding: 0 0.8rem 0.8rem; 
+  }
+  
+  .benefits-note {
+    font-size: 0.9rem; 
+    color: #555;
+    margin-top: 1.5rem; 
+    font-style: italic;
+  }
+  
+
+
+
+
+
+
+
+
+  #banner-text {
+    background-color: #000; 
+    padding: 2rem 1rem; 
+    text-align: center;
+  }
+  
+  #banner-text .banner-text h2 {
+    color: #fff; 
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    margin: 0; 
+    line-height: 1.4; 
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    #banner-text .banner-text h2 {
+      font-size: 1.5rem; 
+    }
+  }
