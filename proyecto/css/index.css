@@ -1,15 +1,16 @@
 
+
 /* Navbar */
 .navbar {
     padding: 0.3rem 1rem;
     height: 80px;
     display: flex;
     align-items: center;
-    position: sticky; /* Fijar el navbar en la parte superior */
-    top: 0; /* Asegúrate de que esté pegado al top */
-    z-index: 1000; /* Para que esté por encima de otros elementos */
-    background-color: #fff; /* Fondo blanco para el navbar */
-  }
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #fff; 
+}
   
   .navbar-brand img {
     height: 170px; 
@@ -22,7 +23,8 @@
 
   .navbar-nav .nav-link {
     padding: 0.3rem 0.8rem; 
-    font-size: 1rem; 
+    font-size: 1.2rem; 
+    font-family: "Afacad", sans-serif;
   }
   
 
@@ -45,6 +47,7 @@
     border-radius: 50px; 
     transition: background-color 0.3s ease, transform 0.3s ease; 
     display: inline-block; 
+    font-family: "Afacad", sans-serif;
   }
 
   .navbar-nav .nav-link.btn:hover {
@@ -59,13 +62,14 @@
   .hero {
     position: relative;
     height: 100vh;
-    background: url('../img/lamimi.jpg') center center/cover no-repeat;
+    background: url('../img/prueba.jpg') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-    padding-top: 100px; /* Añadir espacio para el navbar fijo */
+    padding-top: 100px; 
+    font-family: "Afacad", sans-serif;
   }
   
   .hero-overlay {
@@ -76,6 +80,17 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); 
   }
+
+  .hero-image {
+    margin-top: -200px;
+    max-width: 250px; 
+}
+
+  .hero-content h1 {
+    margin-top: -70px;
+    font-size: 3rem; 
+    line-height: 1.2; 
+}
   
   .hero-content {
     position: relative; 
@@ -85,6 +100,9 @@
   .hero .btn {
     border-color: #fff;
     color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 50px;
   }
 
   .hero .btn:hover {
@@ -110,25 +128,31 @@
       margin-top: -30px;
     }
   
-    
     .navbar-nav .nav-link {
         font-size: 1.3rem;
         color: #e1c290; 
         background-color: #fff; 
         padding: 0.6rem 1rem; 
         border-radius: 25px; 
-        transition: all 0.3s ease; 
+        transition: all 0.3s ease;
+        font-family: "Afacad", sans-serif; 
     }
   
     
     .navbar-nav .nav-link.btn {
       font-size: 1rem; 
       padding: 0.5rem 1rem;
+      font-family: "Afacad", sans-serif;
     }
   
     .hero h1 {
-        margin-top: 50px;
-      font-size: 2rem;  
+        margin-top: 4px;
+      font-size: 2rem; 
+      font-family: "Afacad", sans-serif;
+    }
+
+    .hero-image {
+        margin-top: -30px;
     }
   }
 
@@ -139,6 +163,7 @@
   .about-us {
     padding: 50px 0;
     background-color: #fff;
+    font-family: "Afacad", sans-serif;
   }
   
   .about-us-container {
@@ -165,15 +190,17 @@
   }
   
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #333;
     margin-bottom: 20px;
+    font-family: "Afacad", sans-serif;
   }
   
   .about-text p {
     font-size: 1.3rem;
     color: #666;
     line-height: 1.6;
+    font-family: "Afacad", sans-serif;
   }
   
   @media (max-width: 768px) {
@@ -184,12 +211,14 @@
   
     .about-image img {
       max-width: 100%; 
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   
     .about-text {
       max-width: 90%; 
+      font-family: "Afacad", sans-serif;
     }
+    
   }
 
 
@@ -206,15 +235,16 @@
   }
   
   .benefits h2 {
-    font-size: 2rem; 
+    font-size: 3rem; 
     color: #333;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    font-family: "Afacad", sans-serif; 
   }
   
   .benefits-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1.5rem; 
+    gap: 1.1rem; 
     padding: 0.5rem; 
   }
   
@@ -240,20 +270,16 @@
     font-size: 1.8rem; 
     color: #333;
     margin: 0.8rem 0 0.5rem; 
+    font-family: "Afacad", sans-serif;
   }
   
   .benefit-item p {
     font-size: 1rem; 
     color: #666;
     padding: 0 0.8rem 0.8rem; 
+    font-family: "Afacad", sans-serif;
   }
   
-  .benefits-note {
-    font-size: 0.9rem; 
-    color: #555;
-    margin-top: 1.5rem; 
-    font-style: italic;
-  }
   
 
 
@@ -267,17 +293,19 @@
     background-color: #e1c290; 
     padding: 2rem 1rem; 
     text-align: center;
+    font-family: "Afacad", sans-serif;
   }
   
   #banner-text .banner-text h2 {
     color: #fff; 
-    font-size: 1.4rem; 
+    font-size: 1.8rem; 
     font-weight: 600; 
     margin: 0; 
     line-height: 1.4; 
+    font-family: "Afacad", sans-serif;
   }
   
-  /* Responsividad */
+  
   @media (max-width: 768px) {
     #banner-text .banner-text h2 {
       font-size: 1.5rem; 
@@ -298,9 +326,10 @@
   }
   
   .testimonials-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #333;
     margin-bottom: 2rem;
+    font-family: "Afacad", sans-serif;
   }
   
   /* Carousel Items */
@@ -312,7 +341,7 @@
     text-align: center;
     transition: transform 0.3s ease;
     margin: 8px;
-    height: 290px; 
+    height: 250px; 
     display: flex;
     flex-direction: column;
 }
@@ -337,12 +366,14 @@
     color: #333;
     font-weight: 600;
     margin-top: -35px;
+    font-family: "Afacad", sans-serif;
   }
   
   .testimonial-item p {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+    font-family: "Afacad", sans-serif;
   }
   
   /* Owl Carousel Styling */
@@ -360,6 +391,7 @@
   
   .owl-carousel .owl-dots .owl-dot span {
     background-color: #ddd;
+    margin-top: 30px;
     border-radius: 50%;
     width: 12px;
     height: 12px;
@@ -370,10 +402,223 @@
     background-color: #333;
   }
   
+  .owl-carousel .owl-nav {
+    display: none; 
+}
 
 
 
 
 
 
+/* General Styles */
+.contact-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+  
+.contact-section h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: "Afacad", sans-serif;
+}
+  
+.contact-section p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+  
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+  
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.9rem 1.4rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+
+.contact-btn i {
+    margin-right: 0.8rem; 
+    font-size: 1.4rem; 
+}
+  
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+  
+.whatsapp-btn:hover {
+    background-color: #1caa50;
+    transform: scale(1.05);
+}
+  
+/* Instagram Button */
+.instagram-btn {
+    background-color: #e1306c;
+}
+  
+.instagram-btn:hover {
+    background-color: #c8235d;
+    transform: scale(1.05);
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-btn {
+      font-size: 1rem;
+      padding: 0.7rem 1rem;
+    }
+    
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+    
+    .contact-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+
+ /* Estilos generales del footer */
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 20px;
+    font-family: "Afacad", sans-serif;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  /* Estilo de logo e información */
+  .footer-logo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 23px;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5.5px;
+  }
+  
+  /* Información de contacto */
+  .footer-contact {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-contact h4 {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Afacad", sans-serif;
+
+  }
+  
+  .footer-contact p {
+    font-size: 23px;
+    margin: 8px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .footer-contact a {
+    color: #e1c290;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact i {
+    color: #e1c290;
+    margin-right: 8px;
+  }
+  
+  /* Enlaces rápidos */
+  .footer-links {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-links h4 {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Afacad", sans-serif;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    color: #e1c290;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Derechos reservados */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  
