@@ -163,11 +163,82 @@ body {
 
 
 
+ 
 
 
 
 
 
+
+
+    #subscribe {
+        padding: 50px 0;
+        border-radius: 10px;
+    }
+    
+    #subscribe h2 {
+        color: #333;
+        font-size: 2.1rem;
+        margin-bottom: 30px;
+    }
+
+    #subscribe p {
+        color: #555; 
+        font-size: 1.2rem; 
+        max-width: 600px; 
+        margin: 0 auto 30px auto; 
+        margin-top: -40px;
+    }
+    
+    
+    #inscription {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #inscriptionTxt {
+        width: 70%; 
+        padding: 15px;
+        margin-right: 5px;
+        border-radius: 50px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+    }
+    
+    #btnSend {
+        padding: 15px 25px;
+        border: none;
+        background-color: #e1c290;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #btnSend:hover {
+        background-color: #c49e5b; 
+    }
+    
+    @media (max-width: 576px) {
+        #inscription {
+            flex-direction: column; /* En pantallas pequeñas, volvemos a apilar los elementos */
+            align-items: center; /* Alineamos el contenido al centro */
+        }
+    
+        #inscriptionTxt {
+            width: 80%; /* Ajustamos el tamaño del campo de texto en pantallas pequeñas */
+            margin-bottom: 10px;
+        }
+    
+        #btnSend {
+            width: 80%; /* Ajustamos el tamaño del botón en pantallas pequeñas */
+        }
+    }
 
 
 
