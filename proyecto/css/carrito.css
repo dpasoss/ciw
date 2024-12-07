@@ -106,10 +106,10 @@ body {
 
 
     .main-container {
-        font-family: Arial, sans-serif;
         padding: 20px;
         background-color: #f7f7f7;
         min-height: 100vh;
+        margin-top: 100px;
     }
     
     /* Contenedor de productos y carrito */
